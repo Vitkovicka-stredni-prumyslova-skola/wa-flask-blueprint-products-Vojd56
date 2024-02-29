@@ -15,8 +15,12 @@ def GetAllProducts():
     request = requests.get(f"{URL_API}/products")
     
     return json.loads(request.text)
+def GetAllProductsCategory():
 
-#Načte  seznam produktů z API v JSON formátu a vrátí jej jako pole.
+    request = requests.get(f"{URL_API}/products")
+
+    return json.loads(request.text)
+
 def GetSingleProducts(id):   
     
     request = requests.get(f"{URL_API}/products/" + str(id))
