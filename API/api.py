@@ -15,8 +15,14 @@ def GetAllProducts():
     request = requests.get(f"{URL_API}/products")
     
     return json.loads(request.text)
-def GetAllProductsCategory():
+def GetAllProductsCategory(category):
 
+    request = requests.get(f"{URL_API}/products")
+
+    return json.loads(request.text)
+
+def addProduct():
+    
     request = requests.get(f"{URL_API}/products")
 
     return json.loads(request.text)
